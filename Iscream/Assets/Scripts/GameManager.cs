@@ -9,6 +9,7 @@ public class GameManager : Singleton<GameManager>
 
 //---------------------------------------------------------------------------FIELDS:
 	public float InputWait = 2, MovementTimer = 3f, WaitTimer = 1f;
+	public MovePlayer MP;
 	public Text text;
 
 	[System.NonSerialized]
@@ -16,6 +17,7 @@ public class GameManager : Singleton<GameManager>
 	public bool Initiate, End, MovementCompleted = true;
 	
 	private ParamCube[] direction = new ParamCube[4];
+	private string directionWinner;
 //---------------------------------------------------------------------MONO METHODS:
 
 	void Start() 
@@ -23,6 +25,7 @@ public class GameManager : Singleton<GameManager>
 		InputTemp = Time.time + InputWait;
 		MovementTempTimer =  Time.time + MovementTimer;
 		direction = FindObjectsOfType<ParamCube>();
+		directionWinner = "Down";
 	}
 		
 	void Update()
@@ -44,7 +47,9 @@ public class GameManager : Singleton<GameManager>
 		}
 		if(End)
 		{
-			text.text = "Moving";
+			MakeDecision();
+			MP.Movement(directionWinner);
+			text.text = "Moving " + directionWinner;
 			if(Time.time >= MovementTempTimer)
 			{
 				foreach(ParamCube directions in direction)
@@ -54,8 +59,8 @@ public class GameManager : Singleton<GameManager>
 									1);
 				}
 				WaitTimerTemp = Time.time + WaitTimer;
-				MovementCompleted = true;
-				MakeDecision();
+				MovementCompleted = true;	
+				MP.EndMovement();	
 				End = false;
 			}
 		}
@@ -82,19 +87,19 @@ public class GameManager : Singleton<GameManager>
 		//Move to that direction. Maybe make an enum or something
 		if(highestDirection.gameObject.name == "Up" )
 		{
-			Debug.Log("UP");
+			directionWinner = "Up";
 		}
 		else if(highestDirection.gameObject.name == "Right" )
 		{
-			Debug.Log("Down");
+			directionWinner = "Right";
 		}
 		else if(highestDirection.gameObject.name == "Left" )
 		{
-			Debug.Log("Left");
+			directionWinner = "Left";
 		}
 		else//If there's a tie, it goes down
 		{
-			Debug.Log("Down");
+			directionWinner = "Down";
 		}
 	}
 }
