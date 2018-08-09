@@ -49,7 +49,6 @@ public class GameManager : Singleton<GameManager>
 		{
 			MakeDecision();
 			MP.Movement(directionWinner);
-			text.text = "Moving " + directionWinner;
 			if(Time.time >= MovementTempTimer)
 			{
 				foreach(ParamCube directions in direction)
