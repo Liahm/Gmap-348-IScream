@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2798,7 +2798,7 @@ GameObject:
   - component: {fileID: 1293838499}
   - component: {fileID: 1293838498}
   m_Layer: 9
-  m_Name: scientist_color_01
+  m_Name: Boy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2839,7 +2839,7 @@ SpriteRenderer:
   m_SortingLayerID: -224751183
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b7a23bbf07007fc41ac3e133323e04e8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ecfe9907746df4380a7990bfabf700ba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2857,7 +2857,7 @@ Transform:
   m_GameObject: {fileID: 1293838497}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.017, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.38928974, y: 0.38928974, z: 0.38928974}
   m_Children: []
   m_Father: {fileID: 909009702}
   m_RootOrder: 0
