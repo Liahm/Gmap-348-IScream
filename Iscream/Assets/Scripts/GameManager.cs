@@ -63,8 +63,10 @@ public class GameManager : Singleton<GameManager>
 				End = false;
 			}
 		}
-		if(!End && !Initiate)
-			text.text = "";
+        if (!End && !Initiate)
+        {
+            //	text.text = "";
+        }
     }
 
 //--------------------------------------------------------------------------METHODS:
