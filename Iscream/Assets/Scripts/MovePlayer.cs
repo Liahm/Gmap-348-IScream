@@ -19,7 +19,6 @@ public class MovePlayer : MonoBehaviour
 		
 	void Update()
     {
-
     }
 
 //--------------------------------------------------------------------------METHODS:
@@ -75,13 +74,21 @@ public class MovePlayer : MonoBehaviour
 		if(!CheckOnce)
 		{
 			RaycastHit2D[] allHits;
-			allHits = Physics2D.RaycastAll(transform.position, direction);
+			allHits = Physics2D.RaycastAll(transform.position, direction,1f);
 			
+			Debug.DrawRay(transform.position, direction);
 			Debug.Log(allHits.Length);
+
+			foreach(var hits in allHits)
+			{
+				Debug.Log(hits.transform.gameObject.name);
+			}
+
 			if(allHits.Length > 2)
 			{
 				CanMove = true;
 				CheckOnce = true;
+				GameManager.Instance.Moves++;
 			}
 			else
 			{

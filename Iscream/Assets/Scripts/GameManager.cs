@@ -14,6 +14,7 @@ public class GameManager : Singleton<GameManager>
 
 	[System.NonSerialized]
 	public float InputTemp, MovementTempTimer, WaitTimerTemp;
+	public int Moves;
 	public bool Initiate, End, MovementCompleted = true;
 	
 	private ParamCube[] direction = new ParamCube[4];
