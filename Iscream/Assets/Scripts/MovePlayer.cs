@@ -10,6 +10,8 @@ public class MovePlayer : MonoBehaviour
 	public float Speed;
 	public Rigidbody2D rb;
 	public bool CanMove, CheckOnce;
+
+    public Animator anim;
 //---------------------------------------------------------------------MONO METHODS:
 
 	void Start() 
@@ -31,7 +33,8 @@ public class MovePlayer : MonoBehaviour
 			{
 				rb.velocity = new Vector2(0, Speed);
 				GameManager.Instance.text.text = "Moving " + direction;
-			}
+                anim.SetInteger("stage", 1);
+            }
 		}
 		else if(direction == "Right")
 		{
@@ -40,7 +43,8 @@ public class MovePlayer : MonoBehaviour
 			{
 				rb.velocity = new Vector2(Speed, 0);		
 				GameManager.Instance.text.text = "Moving " + direction;
-			}
+                anim.SetInteger("stage", 2);
+            }
 		}
 		else if(direction == "Left")
 		{
@@ -49,7 +53,8 @@ public class MovePlayer : MonoBehaviour
 			{
 				rb.velocity = new Vector2(-Speed, 0);		
 				GameManager.Instance.text.text = "Moving " + direction;
-			}
+                anim.SetInteger("stage", 4);
+            }
 		}
 		else if(direction == "Down")
 		{
@@ -58,14 +63,21 @@ public class MovePlayer : MonoBehaviour
 			{
 				rb.velocity = new Vector2(0, -Speed);		
 				GameManager.Instance.text.text = "Moving " + direction;
-			}
+                anim.SetInteger("stage", 3);
+            }
 		}
+        else
+        {
+            anim.SetInteger("stage", 0);
+
+        }
 	}
 
 	public void EndMovement()
 	{
 		rb.velocity = new Vector2(0, 0);
-		CanMove = false;
+        anim.SetInteger("stage", 0);
+        CanMove = false;
 		CheckOnce = false;
 	}
 
