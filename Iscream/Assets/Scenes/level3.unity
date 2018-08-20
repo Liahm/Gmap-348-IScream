@@ -368,7 +368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EndTilePosition: {fileID: 1246791806}
   Timer: 2
-  Active: 0
+  Active: 1
 --- !u!61 &116659395
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -378,7 +378,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2076,7 +2076,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2105,7 +2105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EndTilePosition: {fileID: 831577038}
   Timer: 2
-  Active: 0
+  Active: 1
 --- !u!1 &769977305
 GameObject:
   m_ObjectHideFlags: 0
@@ -2692,7 +2692,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2721,7 +2721,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EndTilePosition: {fileID: 1225757686}
   Timer: 2
-  Active: 0
+  Active: 1
 --- !u!1 &909009701
 GameObject:
   m_ObjectHideFlags: 0
@@ -3728,7 +3728,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3757,7 +3757,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EndTilePosition: {fileID: 1105681527}
   Timer: 2
-  Active: 0
+  Active: 1
 --- !u!1 &1234375892
 GameObject:
   m_ObjectHideFlags: 0
@@ -5317,7 +5317,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -5346,7 +5346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EndTilePosition: {fileID: 1767674076}
   Timer: 2
-  Active: 0
+  Active: 1
 --- !u!1 &1629026985
 GameObject:
   m_ObjectHideFlags: 0
@@ -5817,7 +5817,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -5846,7 +5846,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EndTilePosition: {fileID: 1895141180}
   Timer: 2
-  Active: 0
+  Active: 1
 --- !u!1 &1795360785
 GameObject:
   m_ObjectHideFlags: 0
@@ -6082,7 +6082,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -6111,7 +6111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EndTilePosition: {fileID: 1041725904}
   Timer: 2
-  Active: 0
+  Active: 1
 --- !u!1 &1895141180
 GameObject:
   m_ObjectHideFlags: 0
