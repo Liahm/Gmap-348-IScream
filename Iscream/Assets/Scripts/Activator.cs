@@ -14,7 +14,7 @@ public class Activator : MonoBehaviour
 	{
 		if(col.tag == "Player")
 		{
-			ActivateTeleporter.Activate = true;
+			ActivateTeleporter.Active = true;
 		}
 	}
 

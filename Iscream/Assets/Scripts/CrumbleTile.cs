@@ -8,6 +8,7 @@ public class CrumbleTile : MonoBehaviour
 
 //---------------------------------------------------------------------------FIELDS:
 	public float Timer;
+	public Sprite CrumbledTile;
 //---------------------------------------------------------------------MONO METHODS:
 
 	void OnTriggerExit2D(Collider2D col)
@@ -25,6 +26,7 @@ public class CrumbleTile : MonoBehaviour
 	IEnumerator Crumbling()
 	{
 		yield return new WaitForSeconds(Timer);	
-		transform.gameObject.SetActive(false);
+		//transform.gameObject.SetActive(false);
+		this.gameObject.GetComponent<SpriteRenderer>().sprite = CrumbledTile;
 	}
 }

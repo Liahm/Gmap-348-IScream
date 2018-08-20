@@ -9,7 +9,7 @@ public class TeleportTile : MonoBehaviour
 //---------------------------------------------------------------------------FIELDS:
 	public GameObject EndTilePosition;
 	public float Timer = 2;
-	public bool Activate;
+	public bool Active;
 	private GameObject player;
 //---------------------------------------------------------------------MONO METHODS:
 
@@ -17,7 +17,7 @@ public class TeleportTile : MonoBehaviour
 	{
 		if(col.tag == "Player")
 		{
-			if(Activate)
+			if(Active)
 			{
 				player = col.gameObject;
 				StartCoroutine(Teleport());
