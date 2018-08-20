@@ -79,6 +79,7 @@ public class MovePlayer : MonoBehaviour
         anim.SetInteger("stage", 0);
         CanMove = false;
 		CheckOnce = false;
+		GameManager.Instance.directionWinner = "Down";
 	}
 
 	public void CheckTile(Vector2 direction)

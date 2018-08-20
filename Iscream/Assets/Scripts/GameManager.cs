@@ -18,7 +18,7 @@ public class GameManager : Singleton<GameManager>
 	public bool Initiate, End, MovementCompleted = true;
 	
 	private ParamCube[] direction = new ParamCube[4];
-	private string directionWinner;
+	public string directionWinner;
 //---------------------------------------------------------------------MONO METHODS:
 
 	void Start() 
@@ -31,6 +31,7 @@ public class GameManager : Singleton<GameManager>
 		
 	void Update()
     {
+		//Debug.Log(directionWinner);
 		if(Initiate && End)
 		{
 			Initiate = false;
@@ -76,9 +77,10 @@ public class GameManager : Singleton<GameManager>
 	private void MakeDecision()
 	{
 		float Highestval = 1.3f;
-		ParamCube highestDirection = direction[0];
+		ParamCube highestDirection = direction[1];
 		foreach(ParamCube directions in direction)
 		{
+			//Debug.Log("Direction: " + directions);
 			if(Highestval < directions.yAxis)
 			{
 				Highestval = directions.yAxis;
